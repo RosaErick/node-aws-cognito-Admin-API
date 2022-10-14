@@ -9,11 +9,11 @@ export const awsconfig = {
 
 export const middlewareconfig = {
     region: process.env.AWS_REGION,
-    userPoolId: process.env.USER_POOL_ID_STAGE,
-    tokenUse: ['id', 'access'], //Possible Values: access | id
-    audience: [process.env.USER_POOL_APP_CLIENT_ID_STAGE] // (optional) the AWS Cognito User Pool App Client ID
+    userPoolId: process.env.USER_POOL_ID_DEV,
+    tokenUse: ['id', 'access'], 
+    audience: [process.env.USER_POOL_APP_CLIENT_ID_DEV] // (optional) the AWS Cognito User Pool App Client ID
 }
 
 //process.env.USER_POOL_ID_DEV;
-export const userPoolId = process.env.USER_POOL_ID_STAGE;
+export const userPoolId = process.env.USER_POOL_ID_DEV;
 //process.env.USER_POOL_ID_PROD;
