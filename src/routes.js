@@ -13,7 +13,6 @@ routes.get("/checkout/health", (req, res) => {
   return res.json({ message: "its up" });
 });
 
-
 routes.post("/login", AuthController.signIn);
 
 routes.post("/signup", AuthController.signUp);
@@ -25,10 +24,6 @@ routes.post("/removeUserFromGroup", authMiddleware, AuthController.removeUserFro
 routes.get("/listUsers", authMiddleware, AuthController.lisUsers);
 
 routes.post("/updateAttributes", authMiddleware, AuthController.updateAttributes);
-
-
-    
-
 
 
 export default routes;
